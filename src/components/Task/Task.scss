@@ -1,0 +1,63 @@
+.task-container {
+  height: 4.5rem;
+  width: 44rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  background-color: var(--gray-500);
+  padding: 2rem;
+  margin-top: 2rem;
+
+  section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      margin-right: 1rem;
+      cursor: pointer;
+      width: 1.5rem;
+      height: 1.5rem;
+      border: 1px solid var(--blue);
+      border-radius: 50%;
+
+      &:checked {
+        position: relative;
+        background-color: var(--purple);
+        border: none;
+      }
+      
+      &:checked:after {
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: 9px;
+        width: 3px;
+        height: 6px;
+        border: solid white;
+        border-width: 0 1px 1px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+    
+    .delete-task {
+      margin-left: auto;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--red)
+      }
+    }
+  }
+
+
+}

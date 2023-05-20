@@ -1,0 +1,33 @@
+.add-task {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:5px;
+  margin-top: -1.5rem;
+  
+
+  input {
+    width: 39rem;
+    height: 100%;
+    padding: 1rem;
+    background-color: var(--gray-400);
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+  }
+
+
+  button {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 5rem;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: var(--blue-dark);
+    border: none;
+  }
+
+}
