@@ -1,6 +1,6 @@
 import { AiOutlinePlusCircle } from "react-icons/ai"
 
-import "./Input.scss"
+import "./styles.scss"
 
 export default function Input() {
   return (

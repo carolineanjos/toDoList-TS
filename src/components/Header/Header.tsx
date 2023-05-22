@@ -1,6 +1,6 @@
 import Logo from "../..//assets/logo.svg"
 
-import "./Header.scss"
+import "./styles.scss"
 
 export default function Header() {
   return (

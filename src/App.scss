@@ -1,9 +1,33 @@
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  
+  .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 44rem;
+    font-weight: 700;
+
+    .tasks {
+      // display: flex;
+      color: var(--blue)
+
+    }
+    span{
+      padding-left: 1rem;
+    }
+    
+    .tasks-done {
+      margin-left: auto;
+      color: var(--purple)
+    }  
+    
+  }
 }
+
 
 
 
