@@ -1,15 +1,25 @@
 import { AiOutlinePlusCircle } from "react-icons/ai"
+import { ChangeEvent, FormEvent } from "react"
 
 import "./styles.scss"
 
-export default function Input() {
+interface InputProps {
+  handleTaskChange: (event: ChangeEvent<HTMLInputElement>) => void;
+  handleCreateTask: (event: FormEvent) => void;
+  newTaskDescription: string;
+}
+
+export default function Input({handleTaskChange, handleCreateTask, newTaskDescription}: InputProps) {
+
   return (
-    <div className="add-task">
-        <input placeholder="Adicione uma nova tarefa"/>
-        <button>
+    <div>
+      <form className="add-task" onSubmit={handleCreateTask}>
+        <input value={newTaskDescription} onChange={handleTaskChange} placeholder="Adicione uma nova tarefa"/>
+        <button className="create-button" type="submit">
           <span>Criar</span>
           <AiOutlinePlusCircle />
         </button>
-      </div>
+      </form>
+    </div>
   )
 }

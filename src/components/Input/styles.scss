@@ -8,7 +8,7 @@
   
 
   input {
-    width: 39rem;
+    width: 38rem;
     height: 100%;
     padding: 1rem;
     background-color: var(--gray-400);
@@ -17,7 +17,7 @@
   }
 
 
-  button {
+  .create-button {
     display: flex;
     gap: 5px;
     justify-content: center;
